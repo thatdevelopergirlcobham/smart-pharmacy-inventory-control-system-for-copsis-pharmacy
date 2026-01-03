@@ -37,8 +37,6 @@ interface SaleRecord {
     itemsCount: number;
 }
 
-// --- Dummy Data ---
-// In a real app, this would be fetched from the database
 const PRODUCTS: Product[] = [
     {
         id: "p1",
