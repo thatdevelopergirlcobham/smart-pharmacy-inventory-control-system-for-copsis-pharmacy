@@ -3,11 +3,10 @@
 import { useState, useEffect, useMemo } from "react";
 import { Search, ShoppingCart, Trash2, CreditCard, Banknote, Smartphone, Clock, ChevronRight, History, Receipt, CheckCircle, X } from "lucide-react";
 
-// --- Types ---
 interface Batch {
     id: string;
     batchNumber: string;
-    expiryDate: string; // YYYY-MM-DD
+    expiryDate: string; 
     stock: number;
 }
 
