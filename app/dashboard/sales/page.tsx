@@ -6,7 +6,7 @@ import { Search, ShoppingCart, Trash2, CreditCard, Banknote, Smartphone, Clock, 
 interface Batch {
     id: string;
     batchNumber: string;
-    expiryDate: string; 
+    expiryDate: string;
     stock: number;
 }
 
@@ -253,7 +253,7 @@ export default function SalesPage() {
 
     return (
         <div className="flex flex-col h-[calc(100vh-4rem)]"> {/* Height accounts for Layout padding if any, but we are in dashboard layout */}
-            <div className="flex flex-1 gap-6 overflow-hidden">
+            <div className="flex flex-col lg:flex-row flex-1 gap-6 overflow-hidden">
 
                 {/* LEFT COLUMN: Search & Cart (70%) */}
                 <div className="flex-[7] flex flex-col gap-6 overflow-hidden">
@@ -410,7 +410,7 @@ export default function SalesPage() {
                 </div>
 
                 {/* RIGHT COLUMN: Checkout (30%) */}
-                <div className="flex-[3] flex flex-col gap-6">
+                <div className="flex-[3] flex flex-col gap-6 overflow-y-auto lg:overflow-visible">
                     <div className="bg-white rounded-xl shadow-lg border border-slate-200 p-6 flex flex-col h-full text-white">
                         <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
                             <CreditCard className="h-5 w-5 text-blue-400" /> Checkout

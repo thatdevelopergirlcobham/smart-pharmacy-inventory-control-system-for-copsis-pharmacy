@@ -20,6 +20,10 @@ body {
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
 }
 
+input, textarea, select {
+  color: #000000 !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

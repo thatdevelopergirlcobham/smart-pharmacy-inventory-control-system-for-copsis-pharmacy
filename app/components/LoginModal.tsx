@@ -77,7 +77,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
                             </div>
                             <input
                                 type="text"
-                                className="block w-full rounded-xl border-slate-200 bg-slate-50 border focus:border-blue-500 focus:ring-blue-500 pl-10 py-3 transition-colors outline-none"
+                                className="block text-black w-full rounded-xl border-slate-200 bg-slate-50 border focus:border-blue-500 focus:ring-blue-500 pl-10 py-3 transition-colors outline-none"
                                 placeholder="Enter your ID or email"
                             />
                         </div>
@@ -93,7 +93,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
                             </div>
                             <input
                                 type="password"
-                                className="block w-full rounded-xl border-slate-200 bg-slate-50 border focus:border-blue-500 focus:ring-blue-500 pl-10 py-3 transition-colors outline-none"
+                                className="block w-full text-black rounded-xl border-slate-200 bg-slate-50 border focus:border-blue-500 focus:ring-blue-500 pl-10 py-3 transition-colors outline-none"
                                 placeholder="••••••••"
                             />
                         </div>
